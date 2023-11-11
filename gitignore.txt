@@ -1,0 +1,3 @@
+*.txt
+Programa.*
+.vscode/settings.json
