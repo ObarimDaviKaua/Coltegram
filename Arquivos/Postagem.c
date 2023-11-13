@@ -43,7 +43,7 @@ void Desalocar_Postagem(S_ArrayPostagens* array)
 }
 void Liberar_Postagens(S_ArrayPostagens* array)
 {
-    if(array->Postagens == NULL)
+    if(array->Postagens != NULL)
         free(array->Postagens);
     array->Postagens = NULL;
     array->Quantidade = 0;
@@ -58,7 +58,7 @@ void Liberar_Postagens_Profundo(S_ArrayPostagens* array)
         Liberar_Imagens(&array->Postagens[i].Imagens);
     }
 
-    if(array->Postagens == NULL);
+    if(array->Postagens != NULL)
         free(array->Postagens);
     array->Postagens = NULL;
     array->Quantidade = 0;
