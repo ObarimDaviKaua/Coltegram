@@ -54,7 +54,8 @@ S_Usuario* Logar_Usuario(const S_ArrayUsuarios* array)
     do
     {
         Encontrado = NULL;
-        
+        system("pause");
+        system("cls");
         printf("[1] Logar com o ID\n");
         printf("[2] Logar com o Email\n");
         printf("[0] Cancelar\n");
